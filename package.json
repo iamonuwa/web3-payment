@@ -1,7 +1,7 @@
 {
 	"name": "web3-payment",
 	"main": "lib/Payment.js",
-	"module": "lib/MyComponent.es.js",
+	"module": "lib/Payment.es.js",
 	"scripts": {
 		"start": "npm-run-all build:rollup --parallel start:*",
 		"start:rollup": "rollup --config --sourcemap --watch",
@@ -16,7 +16,8 @@
 		"lint:scss": "stylelint --fix --syntax scss"
 	},
 	"dependencies": {
-		"prop-types": "^15.6.2"
+		"prop-types": "^15.6.2",
+		"styled-components": "^4.4.0"
 	},
 	"peerDependencies": {
 		"react": "^16.0.0"
