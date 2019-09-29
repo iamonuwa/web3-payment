@@ -1,0 +1,17 @@
+root: true
+
+extends:
+  - airbnb
+  - prettier
+
+env:
+  browser: true
+  node: true
+
+rules:
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies:
+        - "rollup.config.js"
+        - ".storybook/**/*.js"
+        - "stories/**/*.js"
